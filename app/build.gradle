@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.pubg.imobile' // The spoofed package name
+    namespace 'com.ryomen.spoof' // The spoofed package name
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.pubg.imobile"
+        applicationId "com.ryomen.spoof"
         minSdk 21
         targetSdk 34
         versionCode 1
