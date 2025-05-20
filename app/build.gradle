@@ -1,4 +1,10 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android' // only if you're using Kotlin
+}
+
 android {
+    namespace 'com.pubg.imobile'
     compileSdk 34
 
     defaultConfig {
@@ -8,8 +14,6 @@ android {
         versionCode 1
         versionName "1.0"
     }
-
-    namespace 'com.pubg.imobile' // <- Add this line here
 
     buildTypes {
         release {
