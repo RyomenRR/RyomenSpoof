@@ -1,28 +1,20 @@
-plugins {
-    id 'com.android.application'
-}
-
 android {
-    compileSdk 33
+    compileSdk 34
+
     defaultConfig {
-        applicationId "com.ryomen.spoof"
-        minSdk 26
-        targetSdk 33
+        applicationId "com.pubg.imobile"
+        minSdk 21
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
+
+    namespace 'com.pubg.imobile' // <- Add this line here
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    sourceSets {
-        main {
-            assets.srcDirs = ['src/main/assets']
-        }
-    }
-}
-
-dependencies {
 }
