@@ -1,11 +1,16 @@
 pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
     plugins {
         id "org.jetbrains.kotlin.android" version "1.9.22"
     }
 }
 
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS) // Allow repos in build.gradle
     repositories {
         google()
         mavenCentral()
